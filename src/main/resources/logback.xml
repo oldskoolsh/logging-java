@@ -6,12 +6,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd"
     -->
-
+    <conversionRule conversionWord="decent"
+                    converterClass="sh.oldskool.java.logging.DecentHighlighter"/>
     <appender name="stderr" class="ch.qos.logback.core.ConsoleAppender">
         <target>System.err</target>
         <!--<withJansi>true</withJansi>-->
         <encoder>
-            <pattern>%white([%thread]) %boldBlue(%-4r) %highlight(%-5level) %white(%logger{25}) - %boldWhite(%msg%n)</pattern>
+            <pattern>%white([%-4.4thread]) %boldBlue(%-3r) %decent(%-5level %logger{25}:) %boldWhite(%msg%n)</pattern>
         </encoder>
     </appender>
 

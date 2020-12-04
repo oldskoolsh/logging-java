@@ -5,7 +5,7 @@
 
     <groupId>sh.oldskool.java.logging</groupId>
     <artifactId>logging-java</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>logging-java</name>
     <description>Preconfigured LogBack + Slf4j</description>
 
