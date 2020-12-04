@@ -7,7 +7,10 @@ public class DefaultLogging {
 
     public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(DefaultLogging.class);
-        logger.info("Hi, this is the default logging.");
+        logger.info("Hi, this is the info logging.");
+        logger.debug("Hi, this is the debug logging.");
+        logger.warn("Hi, this is the warn logging.");
+        logger.error("Hi, this is the error logging.");
     }
 
 }
