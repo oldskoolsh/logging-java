@@ -12,7 +12,7 @@
         <target>System.err</target>
         <!--<withJansi>true</withJansi>-->
         <encoder>
-            <pattern>%white([%-4.4thread]) %boldBlue(%-3r) %decent(%-5level %logger{25}:) %boldWhite(%msg%n)</pattern>
+            <pattern>%boldBlue(%-3r) %white([%-4.4thread]) %decent(%-5level [%-20.20logger{20}]:) %boldWhite(%msg%n)</pattern>
         </encoder>
     </appender>
 
